@@ -1,6 +1,7 @@
 Automation Scripts for Linux
 
 These automation scripts are useful to achieve the following items:
+
 Linux RHEL 6/7 and Centos 6/7
 * prepare_instance_for_ami_and_shutdown.sh - Run the prepare-for-wigs scripts for the Servers
 * rhel-subscription-manager.sh - Run RHEL subscription script only for RedHat Linux
