@@ -1,0 +1,1 @@
+netdom remove $env:computername /force; Add-Computer -WorkGroupName 'WORKGROUP'; Rename-Computer -NewName (($env:computername).Substring(0, [Math]::Min(($env:computername).length, 12))+'WIG'); Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0; Enable-NetFirewallRule -DisplayGroup "Remote Desktop";
